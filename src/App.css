@@ -1,38 +1,332 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  background-color: darkslateblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header {
+  font-size: 40px;
+  font-family: sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__button__text {
+  color: white;
+  font: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  width: 60%;
+  height: 50%;
+  border-radius: 50vh;
+  background-color: rgb(105, 93, 177);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.view {
+  height: 100vh;
+  width: 100%;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+}
+
+/* COMPONENT SPECIFIC STYLES */
+
+/* CreateQueryView Styles */
+.query__input {
+  width: 40%;
+  height: 40%;
+  background-color: rgb(105, 93, 177);
+  padding: 20px;
+  font-size: 40px;
+}
+
+/* PredefinedQueryView Styles */
+.dropdown__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.query__dropdown {
+  width: fit-content;
+  position: relative;
+}
+
+.dropdown__item {
+  background-color: rgb(17, 4, 90);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ViewDatabase Styles */
+.options {
+  font-size: 30px;
+  color: rgb(17, 4, 90);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.options:hover {
+  text-decoration: underline;
+}
+
+.table__view {
+  height: 100vh;
+  width: 100%;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  position: absolute;
+}
+
+.table__container {
+  max-width: 80%;
+  height: 80%;
+}
+
+/* ViewQueryResult Styles */
+/*. table__view
+/* .table__container
+
+/* Table Styles */
+.table {
+  height: 100%;
+  max-width: 100%;
+  background-color: white;
+  overflow: auto;
+  position: relative;
+}
+
+#table__head {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 4, 90);
+  color: white;
+}
+
+.table__row {
+  background-color: white;
+}
+
+.table::-webkit-scrollbar {
+  width: 10px;
+}
+
+.table::-webkit-scrollbar-corner {
+  background-color: rgb(105, 93, 177);
+}
+
+.table::-webkit-scrollbar-button {
+  display: none;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background: rgb(17, 4, 90);
+}
+
+.table::-webkit-scrollbar-track {
+  background: rgb(105, 93, 177);
+}
+
+.table::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+/* Mobile Screen Styles */
+
+@media screen and (max-width: 600px) {
+  .App {
+    text-align: center;
+    height: 100vh;
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  .app__button__text {
+    color: white;
+    font-size: 14px;
+  }
+
+  .container {
+    width: 80%;
+    height: 50%;
+    border-radius: 10vh;
+    background-color: rgb(105, 93, 177);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button__container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .view {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+  }
+
+  /* COMPONENT SPECIFIC STYLES */
+
+  /* CreateQueryView Styles */
+  .query__input {
+    width: 70%;
+    height: 40%;
+    background-color: rgb(105, 93, 177);
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  /* PredefinedQueryView Styles */
+  .query__dropdown {
+    max-width: 80%;
+    position: relative;
+  }
+
+  .dropdown__item {
+    background-color: rgb(17, 4, 90);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+
+  .dropdown__arrow {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -30px;
+    cursor: pointer;
+  }
+
+  /* ViewDatabase Styles */
+  .options {
+    font-size: 24px;
+    color: rgb(17, 4, 90);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .options:hover {
+    text-decoration: underline;
+  }
+
+  .table__view {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .table__container {
+    max-width: 80%;
+    height: 80%;
+  }
+
+  /* ViewQueryResult Styles */
+  /*. table__view
+  /* .table__container
+  
+  /* Table Styles */
+  .table {
+    height: 100%;
+    max-width: 100%;
+    background-color: white;
+    overflow: auto;
+    position: relative;
+  }
+
+  #table__head {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 4, 90);
+    color: white;
+  }
+
+  .table__row {
+    background-color: white;
+  }
+
+  .table::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .table::-webkit-scrollbar-corner {
+    background-color: rgb(105, 93, 177);
+  }
+
+  .table::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .table::-webkit-scrollbar-thumb {
+    background: rgb(17, 4, 90);
+  }
+
+  .table::-webkit-scrollbar-track {
+    background: rgb(105, 93, 177);
+  }
+
+  .table::-webkit-scrollbar-track-piece {
+    background-color: transparent;
   }
 }
