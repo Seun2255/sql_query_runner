@@ -40,7 +40,7 @@ function App() {
       </Button>
       <header>
         <h1 className="header">
-          Practice running SQL queries with our mock database
+          Run and instantly view the results of your queries
         </h1>
       </header>
       <section className="container">
