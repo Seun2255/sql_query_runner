@@ -1,9 +1,9 @@
 # SQL Query Practice
 This web app is for people just learning sql, there's a mock database that you can view
-and the run queries for. You can either make your own query or use one of the predefined
+and then send SQL commands to. You can either make your own query or use one of the predefined
 queries. Please have fun using this 😁.
 
-##I used **React** and the following packages: 
+## I used **React** and the following packages: 
 1. create-react-app
 2. Material UI
 3. react-papaparse
