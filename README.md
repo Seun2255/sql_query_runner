@@ -4,7 +4,8 @@ This web app helps you run and instantly view the results of your queries, there
 and then send SQL commands to. You can either make your own query or use one of the predefined
 queries. Please have fun using this 😁.
 Note: currently only select and from commands can be used e.g select \* from customers.
-this is a work in progress the 'Where' statement will be available soon
+
+This is a work in progress the 'Where' statement will be available soon
 
 ## I used **React** and the following packages:
 
