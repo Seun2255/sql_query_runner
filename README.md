@@ -21,4 +21,4 @@ this app has a page load time of 271ms, i used [pingdom](https://tools.pingdom.c
 ## Optimisations Made
 
 1.  All external files where fetched after the page loads
-2.  i used views instead of pages to prevent page redirects
+2.  i used views instead of pages to avoid page redirects
