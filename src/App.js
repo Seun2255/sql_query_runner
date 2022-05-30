@@ -93,7 +93,7 @@ const muiStyles = {
   },
   predefinedQueryButton: {
     backgroundColor: "rgb(17, 4, 90)",
-    padding: "5px",
+    padding: "5px 10px",
   },
   createQueryButton: {
     backgroundColor: "rgb(17, 4, 90)",
