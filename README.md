@@ -10,9 +10,9 @@ This is a work in progress the 'Where' statement will be available soon
 
 ## I used **React** and the following packages:
 
-1. create-react-app
-2. Material UI
-3. react-papaparse
+1. [create-react-app](https://www.npmjs.com/package/create-react-app)
+2. [Material UI](https://www.npmjs.com/package/material-ui)
+3. [react-papaparse](https://react-papaparse.js.org/)
 
 ## Page Load Time
 
