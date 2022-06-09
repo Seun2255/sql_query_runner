@@ -1,8 +1,7 @@
 # SQL Query Runner
 
 This web app helps you run and instantly view the results of your queries, there's a mock database that you can view
-and then send SQL commands to. You can either make your own query or use one of the predefined
-queries. Please have fun using this 😁.
+and then send SQL commands to. You can either make your own query or use one of the predefined queries.
 
 Note: currently only select and from commands can be used e.g select \* from customers.
 
