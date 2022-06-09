@@ -8,6 +8,8 @@ Note: currently only select and from commands can be used e.g select \* from cus
 
 This is a work in progress the 'Where' statement will be available soon
 
+Live Site: https://sql-query-runner.netlify.app/
+
 ## I used **React** and the following packages:
 
 1. [create-react-app](https://www.npmjs.com/package/create-react-app)
